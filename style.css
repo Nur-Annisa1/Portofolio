@@ -1,0 +1,360 @@
+/* Reset dan Style Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-between; /* Menyebar elemen secara merata */
+  align-items: center; 
+  background-color: #8186D5;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h1 {
+  color: #E3E7F1;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav li {
+  font-size: 18px;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #494CA2;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #494CA2;
+  color: #fff;
+}
+
+/* Halaman Utama */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #E3E7F1;
+}
+
+.intro img {
+  width: 250px; /* Membesarkan ukuran gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Efek hover untuk gambar */
+.intro img:hover {
+  transform: scale(1.1); /* Memperbesar gambar saat hover */
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5); /* Bayangan lebih besar saat hover */
+}
+
+.intro h2 {
+  color: #494CA2;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.intro h3 {
+  color: #494CA2;
+  margin-bottom: 15px;
+  font-size: 24px; /* Ukuran font untuk h3 */
+}
+
+.intro p {
+  color: #8186D5;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-size: 16px; /* Ukuran font untuk paragraf */
+}
+
+.intro {
+    text-align: center;
+    margin: 20px;
+}
+
+.intro a {
+  background-color: #C6CBEF;
+  color: #494CA2;
+}
+
+.intro .button:hover {
+  background-color: #494CA2;
+  color: #E3E7F1;
+}
+
+/* Section Style */
+.about, .projects, .skills, .contact {
+  background-color: #E3E7F1;
+  padding: 40px;
+  min-height: 400px; /* Tambahkan nilai ini untuk menentukan tinggi minimal */
+}
+
+
+.about h2, .projects h2, .skills h2, .contact h2 {
+  color: #494CA2;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.about p, .projects p, .skills ul, .contact form {
+  color: #8186D5;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.about {
+  padding-top: 7rem;
+  background-color: #E3E7F1; /* Warna latar belakang */
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #494CA2; /* Warna judul */
+  margin-bottom: 20px;
+  text-align: center; /* Menengahkan judul */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Menyusun konten secara vertikal */
+  align-items: center; /* Menengahkan konten */
+}
+
+.background {
+  max-width: 800px; /* Lebar maksimum konten */
+  text-align: justify; /* Rata kiri dan kanan */
+  margin-bottom: 20px; /* Jarak antara background dan pendidikan */
+}
+
+.education {
+  max-width: 800px; /* Lebar maksimum untuk pendidikan */
+  background-color: #8186D5; /* Warna latar belakang untuk pendidikan */
+  padding: 15px; /* Jarak di dalam kotak pendidikan */
+  border-radius: 30px; /* Sudut membulat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.education h3 {
+  font-size: 1.5em; /* Ukuran font untuk judul pendidikan */
+  color: #E3E7F1; /* Warna judul pendidikan (contoh: biru tua) */
+  margin-bottom: 10px; /* Jarak antara judul dan isi pendidikan */
+}
+
+.education ul {
+  list-style-type: none; /* Menghapus titik pada daftar */
+  padding-left: 0; /* Menghapus padding kiri */
+}
+
+.education li {
+  font-size: 1em; /* Ukuran font untuk isi pendidikan */
+  color: #E3E7F1; /* Warna teks untuk isi pendidikan (contoh: biru abu-abu) */
+  padding: 10px; /* Jarak di dalam item daftar */
+  margin-bottom: 5px; /* Jarak antara item daftar */
+  border-radius: 3px; /* Sudut membulat untuk item daftar */
+}
+
+.projects{
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+.projects .project-item img{
+  width: 50%;
+}
+.projects h2{
+  padding-bottom: 1rem;
+}
+.projects h3 {
+  color: #494CA2;
+}
+
+.projects a{
+  color: #494CA2;
+}
+
+.projects p {
+  font-family: 'Poppins', sans-serif; /* Atur jenis font */
+    font-size: 18px; /* Ukuran font */
+    line-height: 1.5; /* Jarak antar baris */
+    color: #494CA2; /* Warna teks */
+    margin: 1em 0; /* Margin atas dan bawah */
+
+}
+
+.project-item{
+  padding-top: 2px;
+  background-color: #C6CBEF;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff; /* Warna teks */
+  background-color: #E3E7F1; /* Warna latar belakang */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+.button:hover {
+  background-color: #494CA2; /* Warna latar belakang saat hover */
+  transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+.project-item img{
+  width: 30rem;
+  height: auto;
+}
+/* Skills List */
+.skills {
+  padding-top: 7rem;
+  background-color: #E3E7F1; /* Warna latar belakang */
+}
+
+.skills h2 {
+  font-size: 2em;
+  color: #494CA2; /* Warna judul */
+  text-align: center; /* Menengahkan judul */
+  margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.skills .section-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  font-size: 30px;
+}
+
+.skills .section-box .box{
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #8186D5;
+  color: #E3E7F1;
+}
+
+.skills .section-box .box .image-box{
+  padding: 5px;
+}
+
+.skills .section-box .box .image-box img{
+  width: 5rem;
+}
+/* Form Kontak */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact label {
+  font-weight: bold;
+  color: #494CA2;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E3E7F1;
+  outline: none;
+}
+
+.contact button {
+  background-color: #C6CBEF;
+  color: #494CA2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #494CA2;
+  color: #E3E7F1;
+}
+
+/* Footer */
+footer {
+  background-color: #C6CBEF;
+  color: #494CA2;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.social-media a {
+  color: #494CA2;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #494CA2;
+}
+
+/* Animasi untuk elemen navbar saat hover */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* Ganti dengan warna teks yang diinginkan */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #E3E7F1; /* Ganti dengan warna hover yang diinginkan */
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Jarak dari bawah teks */
+  width: 100%;
+  height: 2px;
+  background: #E3E7F1; /* Ganti dengan warna garis bawah */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
